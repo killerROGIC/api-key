@@ -1,0 +1,43 @@
+name: Crypto Algorithm Scan
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  crypto-detection:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. 设置 Python 环境 (该工具是用 Python 写的)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.3'
+
+      # 3. 安装 crypto-detector
+      - name: Install crypto-detector
+        run: |
+          pip install crypto-detector
+
+      # 4. 运行扫描
+      # -d .: 扫描当前目录
+      # -o report: 输出文件名为 report
+      - name: Run Crypto Detector
+        run: |
+          crypto-detector -d . -o cbom_report
+
+      # 5. 上传报告供下载查看
+      # 工具会生成 JSON 和 Excel (.xlsx) 文件
+      - name: Upload Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: crypto-bom-report
+          path: |
+            cbom_report.json
+            cbom_report.xlsx
