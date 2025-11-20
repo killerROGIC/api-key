@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-float-layout": "npm\\taro-ui\\dist\\weapp\\components\\float-layout\\index",
+    "radio-ui": "components\\Radio\\index",
+    "component-base-navigation": "components\\PayLayout\\components\\navi\\index"
+  }
+}

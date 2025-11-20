@@ -1,0 +1,15 @@
+<view class="naviBar" wx:if="{{$taroCompReady}}">
+    <view class="navigation" style="{{anonymousState__temp}}">
+        <view class="barInner" style="{{anonymousState__temp2}}">
+            <view bindtap="goOther" class="naviBtn" data-e-tap-so="this">
+                <view class="back" style="{{anonymousState__temp3}}"></view>
+                <view class="back-touch"></view>
+            </view>
+        </view>
+        <view class="pageTitle" style="{{anonymousState__temp4}}">
+            <view class="titleText" style="{{anonymousState__temp5}}">{{title}}<slot></slot>
+            </view>
+        </view>
+    </view>
+    <view class="placeholder" style="{{anonymousState__temp6}}"></view>
+</view>

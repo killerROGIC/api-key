@@ -1,0 +1,38 @@
+<view class="pay-layout" wx:if="{{$taroCompReady}}">
+    <at-float-layout compid="{{$compid__235}}">
+        <view class="float-layout">
+            <image bindtap="onClose" class="close" data-e-tap-so="this" src="{{anonymousState__temp}}"></image>
+            <view class="amount">
+                <text class="sign">¥</text>{{amount}}</view>
+            <view class="type">
+                <view class="left">订单信息</view>
+                <view class="right">在线鉴别</view>
+            </view>
+            <view class="line"></view>
+            <view class="limit">
+                <image class="ico" src="{{anonymousState__temp2}}"></image>
+                <view class="title">充值鉴别豆即享高额补贴</view>
+                <view class="desc">{{freeInfo?freeInfo.payRechargeInstructions:''}}</view>
+                <image bindtap="goBear" class="btn" data-e-tap-so="this" src="{{anonymousState__temp3}}"></image>
+            </view>
+            <view class="pay">
+                <view bindtap="setEasyState" class="item" data-e-tap-a-a="payIndex" data-e-tap-a-b="{{0}}" data-e-tap-so="this">
+                    <view class="left">
+                        <image class="ico" src="{{anonymousState__temp4}}"></image>
+                        <view class="name">微信支付</view>
+                    </view>
+                    <radio-ui compid="{{$compid__236}}"></radio-ui>
+                </view>
+                <view bindtap="setEasyState" class="item" data-e-tap-a-a="payIndex" data-e-tap-a-b="{{1}}" data-e-tap-so="this" wx:if="{{!noBear}}">
+                    <view class="left">
+                        <image class="ico" src="{{anonymousState__temp6}}"></image>
+                        <view class="name">鉴别豆支付 ({{anonymousState__temp7}}豆)</view>
+                        <image class="recommend" src="{{anonymousState__temp8}}"></image>
+                    </view>
+                    <radio-ui compid="{{$compid__237}}"></radio-ui>
+                </view>
+            </view>
+            <view bindtap="onConfirm" class="standard_btn">确认支付</view>
+        </view>
+    </at-float-layout>
+</view>

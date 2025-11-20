@@ -1,0 +1,69 @@
+.flex-around-box,.flex-around-box-center,.flex-between-box,.flex-between-box-center,.flex-box,.flex-box-center,.flex-center-box,.flex-column-box {
+    display: -webkit-flex;
+    display: flex
+}
+
+.flex-box-center,.flex-column-box {
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.flex-column-box {
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+.flex-between-box,.flex-between-box-center {
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.flex-around-box,.flex-around-box-center {
+    -webkit-justify-content: space-around;
+    justify-content: space-around
+}
+
+.flex-around-box-center,.flex-between-box-center,.flex-center-box {
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.flex-center-box {
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.privacy-page {
+    padding: 32rpx 30rpx
+}
+
+.privacy-body .title {
+    color: #333;
+    font-size: 30rpx;
+    font-weight: 500;
+    margin-bottom: 32rpx
+}
+
+.privacy-body .desc {
+    color: #666;
+    font-size: 28rpx;
+    padding-top: 28rpx
+}
+
+.privacy-body .url-title {
+    color: #00f;
+    font-size: 28rpx;
+    line-height: 1.4;
+    padding-top: 32rpx
+}
+
+.privacy-body .operation {
+    margin-top: 60rpx;
+    padding: 0 32rpx
+}
+
+.privacy-body .operation wx-button {
+    box-sizing: border-box;
+    font-size: 30rpx;
+    width: 260rpx
+}

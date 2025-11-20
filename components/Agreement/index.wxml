@@ -1,0 +1,12 @@
+<at-float-layout compid="{{$compid__239}}" wx:if="{{$taroCompReady}}">
+    <view id="gfzzz">
+        <scroll-view bindscrolltolower="onScrollToLower" data-e-scrolltolower-so="this" lowerThreshold="{{30}}" scrollY="{{true}}" style="{{anonymousState__temp}}">
+            <view class="agreement" id="ggzzz" style="{{anonymousState__temp2}}">
+                <rich-text nodes="{{content}}"></rich-text>
+                <view class="agreement-btn">
+                    <view bindtap="onConfirm" class="agreement-btn-item" data-e-tap-so="this" style="{{anonymousState__temp3}}">{{btnInfo[btnIndex].text}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</at-float-layout>

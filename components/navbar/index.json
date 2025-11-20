@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "component-base-navigation": "components\\navbar\\components\\navi\\index"
+  }
+}

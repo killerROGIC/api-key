@@ -1,0 +1,9 @@
+<view class="nav-bar" style="{{anonymousState__temp}}" wx:if="{{$taroCompReady}}">
+    <view class="nav-fixed" style="{{anonymousState__temp2}}">
+        <view class="nav-bar-container" style="{{anonymousState__temp3}}">
+            <view class="at-icon at-icon-chevron-left back" style="{{anonymousState__temp4}}" wx:if="{{showBack}}">
+                <navigator class="navigator" delta="1" hoverClass="none" openType="navigateBack"></navigator>
+            </view>{{title}}<slot></slot>
+        </view>
+    </view>
+</view>

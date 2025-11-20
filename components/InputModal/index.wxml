@@ -1,0 +1,13 @@
+<view class="Demo-component" wx:if="{{$taroCompReady}}">
+    <view class="orderModelHead" wx:if="{{visible}}">
+        <view bindtap="onClose" class="orderModelyin" data-e-tap-so="this"></view>
+        <view class="orderModelCenter" id="orderModelCenter">
+            <view class="flex-box flex">
+                <image bindtap="onClose" class="close" src="{{anonymousState__temp}}"></image>
+                <view class="title">{{title}}</view>
+            </view>
+            <at-input compid="{{$compid__245}}"></at-input>
+            <button bindtap="onSumbit" class="btn" data-e-tap-so="this">提交</button>
+        </view>
+    </view>
+</view>

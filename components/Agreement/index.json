@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-float-layout": "npm\\taro-ui\\dist\\weapp\\components\\float-layout\\index",
+    "component-base-navigation": "components\\Agreement\\components\\navi\\index"
+  }
+}

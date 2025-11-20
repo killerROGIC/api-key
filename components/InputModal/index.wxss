@@ -1,0 +1,99 @@
+.flex-around-box,.flex-around-box-center,.flex-between-box,.flex-between-box-center,.flex-box,.flex-box-center,.flex-center-box,.flex-column-box {
+    display: -webkit-flex;
+    display: flex
+}
+
+.flex-box-center,.flex-column-box {
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.flex-column-box {
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+.flex-between-box,.flex-between-box-center {
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.flex-around-box,.flex-around-box-center {
+    -webkit-justify-content: space-around;
+    justify-content: space-around
+}
+
+.flex-around-box-center,.flex-between-box-center,.flex-center-box {
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.flex-center-box {
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.orderModelHead .orderModelyin {
+    background: #000;
+    height: 100%;
+    left: 0;
+    opacity: .3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3
+}
+
+.orderModelHead .orderModelCenter {
+    background: #fff;
+    border-radius: 16rpx;
+    color: #7f7f7f;
+    font-size: 30rpx;
+    height: auto;
+    left: 50%;
+    overflow: hidden;
+    padding: 30rpx 30rpx 40rpx;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 600rpx;
+    z-index: 4
+}
+
+.orderModelHead .orderModelCenter .flex {
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative
+}
+
+.orderModelHead .orderModelCenter .flex .close {
+    height: 24rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24rpx
+}
+
+.orderModelHead .orderModelCenter .flex .title {
+    font-size: 32rpx
+}
+
+.orderModelHead .orderModelCenter .NumberValue,.orderModelHead .orderModelCenter .expressNumberValue {
+    border: 2rpx solid #000;
+    border-radius: 4rpx;
+    margin: 45rpx 34rpx 0;
+    padding: 16rpx 15rpx
+}
+
+.orderModelHead .orderModelCenter .expressNumberValue {
+    margin: 0 34rpx
+}
+
+.orderModelHead .orderModelCenter .btn {
+    background-color: #f01632;
+    border-radius: 12rpx;
+    color: #fff;
+    font-size: 32rpx;
+    margin-top: 60rpx
+}

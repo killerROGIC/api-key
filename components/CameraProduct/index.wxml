@@ -1,0 +1,44 @@
+<block wx:if="{{$taroCompReady}}">
+    <view wx:if="{{!curPro}}"></view>
+    <view class="camera-layout" wx:else>
+        <component-base-navigation compid="{{$compid__238}}"></component-base-navigation>
+        <image class="camera" mode="aspectFill" src="{{anonymousState__temp}}" style="{{'height:'+cameraHeight+'px'}}" wx:if="{{hasPicture}}"></image>
+        <camera binderror="bindCameraError" class="camera" flash="{{light?'torch':'off'}}" resolution="high" style="{{'height:'+cameraHeight+'px'}}" wx:else>
+            <image bindtap="showImage" class="product-picture" data-e-tap-a-a="{{curPro.exampleImgUrl}}" data-e-tap-so="this" mode="aspectFill" src="{{anonymousState__temp2}}" wx:if="{{!!curPro}}"></image>
+            <view wx:else></view>
+        </camera>
+        <view class="page-tips">需参考图例，清晰完整拍摄指定部位图片</view>
+        <view class="operation">
+            <scroll-view class="scroll" scrollIntoView="{{'cur-tag-'+curTagkey}}" scrollWithAnimation="{{true}}" scrollX="{{true}}" showScrollbar="{{false}}">
+                <view class="products">
+                    <view class="item-box flex-box-center">
+                        <view bindtap="handleChangeLoaction" class="{{['item','flex-center-box',pos===index?'selected':'']}}" data-e-tap-a-a="{{index}}" data-e-tap-so="this" id="{{'cur-tag-'+index}}" wx:for="{{loopArray176}}" wx:key="id">
+                            <image class="picture" mode="aspectFill" src="{{item[$loopState__temp4]}}" wx:if="{{item[$original].flagImgUrl}}"></image>
+                            <image class="picture" mode="aspectFill" src="{{item[$loopState__temp6]}}" wx:else></image>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="bottom flex-between-box-center" wx:if="{{!hasPicture}}">
+            <view bindtap="funPrivategczzz" class="local btn">
+                <image class="img" src="https://other.weijianapp.com/WeChat/newWeChat/ico-camera-light-picture.png"></image>
+            </view>
+            <view bindtap="takePhotoes" class="circle flex-center-box" data-e-tap-so="this">
+                <view class="center"></view>
+            </view>
+            <view bindtap="switchLight" class="light btn" data-e-tap-so="this">
+                <image class="img" src="https://other.weijianapp.com/WeChat/newWeChat/ico-camera-light-on.png" wx:if="{{light}}"></image>
+                <image class="img" src="https://other.weijianapp.com/WeChat/newWeChat/ico-camera-light-off.png" wx:else></image>
+            </view>
+        </view>
+        <view class="bottom2 flex-between-box-center" wx:else>
+            <view bindtap="funPrivategdzzz" class="btn">
+                <image class="img" mode="aspectFill" src="https://other.weijianapp.com/WeChat/newWeChat/ico-camera-light-reget.png"></image>
+            </view>
+            <view bindtap="funPrivategezzz" class="btn">
+                <image class="img" mode="aspectFill" src="https://other.weijianapp.com/WeChat/newWeChat/ico-camera-light-next.png"></image>
+            </view>
+        </view>
+    </view>
+</block>

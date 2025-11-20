@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-loading": "npm\\taro-ui\\dist\\weapp\\components\\loading\\index",
+    "component-base-navigation": "npm\\taro-ui\\dist\\weapp\\components\\activity-indicator\\components\\navi\\index"
+  }
+}

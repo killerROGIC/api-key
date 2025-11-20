@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-modal": "npm\\taro-ui\\dist\\weapp\\components\\modal\\index",
+    "at-modal-content": "npm\\taro-ui\\dist\\weapp\\components\\modal\\content\\index",
+    "at-modal-action": "npm\\taro-ui\\dist\\weapp\\components\\modal\\action\\index",
+    "component-base-navigation": "components\\CameraIdentify\\components\\navi\\index"
+  }
+}

@@ -1,0 +1,12 @@
+<at-float-layout compid="{{$compid__244}}" wx:if="{{$taroCompReady}}">
+    <view class="privacy-body">
+        <view class="title">用户隐私保护提示</view>
+        <view class="desc">感谢您使用本小程序，您使用小程序前应当阅井同意</view>
+        <view bindtap="goPricy" class="url-title">《用户隐私保护指引》</view>
+        <view class="desc">当您点击同意并开始时用产品服务时，即表示你已理解并同息该条款内容，该条款将对您产生法律约束力。如您拒绝，将无法享受小程序带来的服务。</view>
+        <view class="operation flex-between-box-center">
+            <button bindtap="funPrivateghzzz" type="secondary">不同意并退出</button>
+            <button bindagreeprivacyauthorization="funPrivategizzz" openType="agreePrivacyAuthorization" type="primary">同意并继续</button>
+        </view>
+    </view>
+</at-float-layout>

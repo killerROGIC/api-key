@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-input": "npm\\taro-ui\\dist\\weapp\\components\\input\\index",
+    "component-base-navigation": "components\\InputModal\\components\\navi\\index"
+  }
+}

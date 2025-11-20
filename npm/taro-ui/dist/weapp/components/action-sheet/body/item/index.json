@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "component-base-navigation": "npm\\taro-ui\\dist\\weapp\\components\\action-sheet\\body\\item\\components\\navi\\index"
+  }
+}

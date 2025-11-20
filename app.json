@@ -1,0 +1,140 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/my/trend",
+    "pages/my/identifyer",
+    "pages/my/materialOrder",
+    "pages/my/onlineOrder",
+    "pages/batch/index",
+    "pages/shop/index",
+    "pages/index/h5Link",
+    "pages/batch/suggest",
+    "pages/mine/feedback",
+    "pages/mine/mineFeedback",
+    "pages/mine/feedbackRecord",
+    "pages/mine/feedbackRecordInfo",
+    "pages/mine/serviceDescription",
+    "pages/mine/login",
+    "pages/mine/phoneBind",
+    "pages/my/user",
+    "pages/find/info",
+    "pages/find/video",
+    "pages/coupon/index",
+    "pages/mine/userInfo",
+    "pages/test/index",
+    "pages/index/materialHome",
+    "pages/freeCoupon/detail",
+    "pages/freeCoupon/list",
+    "pages/my/bear",
+    "pages/my/bearDetail",
+    "pages/worktop/index",
+    "pages/barcode/index",
+    "pages/yywdemo/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "position": "bottom",
+    "color": "#333",
+    "selectedColor": "#ff5a5a",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "鉴别",
+        "pagePath": "pages/index/index",
+        "iconPath": "asset\\images\\jianbie.png",
+        "selectedIconPath": "asset\\images\\select_jianbie.png"
+      },
+      {
+        "text": "检测",
+        "pagePath": "pages/index/materialHome",
+        "iconPath": "asset\\images\\tabbar-material.png",
+        "selectedIconPath": "asset\\images\\tabbar-material-selected.png"
+      },
+      {
+        "text": "批号",
+        "pagePath": "pages/batch/index",
+        "iconPath": "asset\\images\\batch.png",
+        "selectedIconPath": "asset\\images\\batch_select.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/user",
+        "iconPath": "asset\\images\\me.png",
+        "selectedIconPath": "asset\\images\\me_select.png"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "brand",
+        "identifyTeacher",
+        "identifyList",
+        "activity"
+      ]
+    }
+  },
+  "renderer": "webview",
+  "__usePrivacyCheck__": true,
+  "componentFramework": "exparser",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#000000",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "subPackages": [
+    {
+      "root": "pages/identifyTeacher/",
+      "name": "identifyTeacher",
+      "pages": [
+        "index",
+        "identifyTeacherList",
+        "detail"
+      ]
+    },
+    {
+      "root": "pages/brand/",
+      "name": "brand",
+      "pages": [
+        "detail",
+        "index",
+        "selectList",
+        "new",
+        "materDetail",
+        "addressPage",
+        "materOrderDetail",
+        "DetailStatus",
+        "agreement",
+        "logisticDetail",
+        "materialIdentify"
+      ]
+    },
+    {
+      "root": "pages/activity/",
+      "name": "activity",
+      "pages": [
+        "index",
+        "act02index",
+        "act01",
+        "drawRules",
+        "luckyDrawList",
+        "buy"
+      ]
+    },
+    {
+      "root": "pages/identifyList/",
+      "name": "identifyList",
+      "pages": [
+        "index",
+        "confirm",
+        "result"
+      ]
+    }
+  ],
+  "plugins": {}
+}

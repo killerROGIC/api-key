@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-tab-bar": "npm\\taro-ui\\dist\\weapp\\components\\tab-bar\\index",
+    "component-base-navigation": "custom-tab-bar\\components\\navi\\index"
+  }
+}

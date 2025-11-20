@@ -1,0 +1,55 @@
+<view class="camera-layout" wx:if="{{$taroCompReady}}">
+    <component-base-navigation compid="{{$compid__242}}"></component-base-navigation>
+    <camera binderror="bindCameraError" class="camera" flash="{{light?'on':'off'}}" resolution="high" style="{{'height:'+cameraHeight+'px'}}">
+        <view class="text">对准商品，可自动识别</view>
+    </camera>
+    <view style="height:50px"></view>
+    <view class="bottom flex-between-box-center">
+        <view bindtap="handleChoiceImg" class="local btn">
+            <image class="img" src="{{anonymousState__temp}}"></image>
+        </view>
+        <view bindtap="takePhotoes" class="circle flex-center-box" data-e-tap-so="this">
+            <view class="center"></view>
+        </view>
+        <view bindtap="switchLight" class="light btn" data-e-tap-so="this">
+            <image class="img"></image>
+        </view>
+    </view>
+    <view class="product-identify" wx:if="{{imageVisible}}">
+        <view class="title-box flex-box-center">
+            <image class="logo" src="{{anonymousState__temp2}}"></image>
+            <text class="title">AI智能识别到以下产品</text>
+        </view>
+        <view bindtap="navToIdentify" class="content flex-box-center" data-e-tap-a-a="{{item[$original].productId}}" data-e-tap-so="this" wx:for="{{loopArray178}}" wx:for-index="_anonIdx2" wx:key="productId">
+            <image class="avatar" src="{{item[$loopState__temp4]}}"></image>
+            <view class="info">
+                <view class="name">{{item[$original].brandName}}</view>
+                <view class="desc">{{item[$original].productName}}</view>
+            </view>
+        </view>
+        <view class="operation-layout flex-between-box">
+            <view bindtap="setImageVisible" class="btn cancel" data-e-tap-a-a="{{false}}" data-e-tap-so="this">不是这款</view>
+            <view bindtap="identifyFail" class="btn confirm" data-e-tap-so="this">提交反馈</view>
+        </view>
+    </view>
+    <at-modal compid="{{$compid__243}}">
+        <at-modal-content>
+            <view class="flex-box-center">
+                <image src="{{anonymousState__temp5}}" style="width:20px;height:20px;margin-right:5px"></image>
+                <text>找不到对应产品，我们将尽快更新</text>
+            </view>
+        </at-modal-content>
+        <at-modal-action>
+            <button bindtap="setNotIdentifyVisible" data-e-tap-a-a="{{false}}" data-e-tap-so="this">换个产品试试</button>
+        </at-modal-action>
+    </at-modal>
+    <view bindtap="setTipsVisible" class="tip-mask" data-e-tap-a-a="{{false}}" data-e-tap-so="this" wx:if="{{tipsVisible}}">
+        <view catchtap="stopPropagation" class="tip-layout" data-e-tap-so="this">
+            <image class="bg" src="https://other.weijianapp.com/WeChat/newWeChat/img-identify-bg.png"></image>
+            <view class="operation flex-between-box">
+                <image bindtap="setTipsVisible" class="btn" data-e-tap-a-a="{{false}}" data-e-tap-a-b="{{true}}" data-e-tap-so="this" src="https://other.weijianapp.com/WeChat/newWeChat/img-identify-cancel.png"></image>
+                <image bindtap="setTipsVisible" class="btn" data-e-tap-a-a="{{false}}" data-e-tap-a-b="{{false}}" data-e-tap-so="this" src="https://other.weijianapp.com/WeChat/newWeChat/img-identify-sure.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

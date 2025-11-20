@@ -1,0 +1,64 @@
+.flex-around-box,.flex-around-box-center,.flex-between-box,.flex-between-box-center,.flex-box,.flex-box-center,.flex-center-box,.flex-column-box {
+    display: -webkit-flex;
+    display: flex
+}
+
+.flex-box-center,.flex-column-box {
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.flex-column-box {
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+.flex-between-box,.flex-between-box-center {
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.flex-around-box,.flex-around-box-center {
+    -webkit-justify-content: space-around;
+    justify-content: space-around
+}
+
+.agreement-btn,.flex-around-box-center,.flex-between-box-center,.flex-center-box {
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.agreement-btn,.flex-center-box {
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.agreement-btn {
+    background-color: #fff;
+    background: #fff;
+    border-top: 2rpx solid #e9e9e9;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    height: 100rpx;
+    left: 0;
+    padding: 25rpx 30rpx 24rpx;
+    position: fixed;
+    right: 0
+}
+
+.agreement-btn-item {
+    background-color: #f01632;
+    border-radius: 42rpx;
+    color: #fff;
+    font-weight: 500;
+    height: 84rpx;
+    left: 50%;
+    letter-spacing: 4rpx;
+    line-height: 84rpx;
+    position: fixed;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 70%
+}

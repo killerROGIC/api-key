@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-action-sheet-header": "npm\\taro-ui\\dist\\weapp\\components\\action-sheet\\header\\index",
+    "at-action-sheet-body": "npm\\taro-ui\\dist\\weapp\\components\\action-sheet\\body\\index",
+    "at-action-sheet-footer": "npm\\taro-ui\\dist\\weapp\\components\\action-sheet\\footer\\index",
+    "component-base-navigation": "npm\\taro-ui\\dist\\weapp\\components\\action-sheet\\components\\navi\\index"
+  }
+}
